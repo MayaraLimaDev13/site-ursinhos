@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar img{
+    border-radius: 10px;
+    width:130px;
+    
+}
+
+header,
+nav,
+.collapse{
+    background-image: linear-gradient(to right,#3bc8f3 0%, rgb(48, 196, 223) 51%, #db7ec4 100%);
+    height: auto;
+}
+.carousel-inner,.carousel-item img{
+    width:80%;
+    height:450px;
+    display: block;
+    margin: 0 auto;
+    
+}
+.carousel-inner {
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-inner .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+}
+h5{
+    font-size:60px;
+    font-family:'Dancing Script', cursive;
+    color: #d800a2;
+    text-shadow: 2px 2px 2px #000000;
+}
+.nav-item .nav-link:hover{
+    color: #d800a2;
+}
+.nav-link img{
+    width:30px;
+}
+
+
+
+.moreAboutUs{
+    display:flex; 
+    justify-content:center;
+    align-items:center;
+}
+h1{
+    font-size:50px;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.moreAboutUs img{
+    width:280px;
+    padding:10px;
+}
+.moreAboutUs p{
+    width:380px;
+    margin-right:30px;
+    padding:10px;
+}
+
+
+
+.ourTeam{
+    background-image: linear-gradient(to right,#3bc8f3 0%, rgb(48, 196, 223) 51%, #db7ec4 100%);
+}
+.teamInformation{
+    display:flex;
+    justify-content: center;
+}
+.teamPerson{
+    margin:20px;
+    padding:10px;
+}
+.teamPerson img{
+    width:170px;
+    height:170px;
+    border-radius:150px; 
+}
+.teamName{
+    font-weight:600;
+    padding-top:20px;
+}
+
+.mediaSocial img{
+    width:30px;
+    height:30px;
+    margin-left:5px;
+    margin-right:5px;   
+}
+
+
+
+.ourProducts .card img{
+    width:200px;
+    height:260px;
+}
+.ourProducts .card-title{
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: none;
+}
+.ourProducts .card .btn{
+    background-color: #3bc8f3;
+    padding:5px 40px 5px 40px;
+    margin-top:25px; 
+}
+.ourProducts .card .btn:hover{
+    background-image: linear-gradient(to right,#3bc8f3 30%, rgb(187, 117, 194) 70%, #db7ec4 100%);
+}
+.ourProducts .card:hover{
+    box-sizing: border-box;
+    border-image: linear-gradient(to right, #3bc8f3,#db7ec4 100%);
+    border-image-slice: 1;
+}
+
+.card-price{
+    color: #38b9e0;
+    font-weight:600;
+    font-size:17px;
+}
+h6{
+    display:inline;
+    color: #212529;
+    margin-left: 5px;
+    font-weight:normal;
+    font-size:13px;
+}
+.ourProducts .card-fees{
+    font-size:13px;
+}
+
+
+footer{
+    background-image: linear-gradient(to right,#3bc8f3 0%, rgb(48, 196, 223) 51%, #db7ec4 100%);
+}
+.companySocialMedia img{
+    width:25px;
+    height:25px;
+    margin-left:5px;
+    margin-right:5px; 
+}
+.companyWhatsApp img{
+    width:25px;
+    height:25px;
+    margin-right:5px;
+}
+.companyWhatsApp a{
+    color:#212529;
+    text-decoration:none;
+}
+.companyWhatsApp a:hover{
+    color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:650px)  {
+    
+    .carousel-inner,.carousel-item img{
+        height:250px;
+    }
+    
+    
+    
+    h1{
+        font-size:35px;
+        margin:20px 0px 20px 0px;
+    }
+    .moreAboutUs{
+        flex-direction: column;
+    }
+    .moreAboutUs p{
+        width:100%;
+        margin:0;
+    }
+    .moreAboutUs img{
+        margin-top:20px;
+    }
+
+
+    .teamInformation{
+        flex-direction: column;
+    } 
+    
+
+    .ourProducts{
+        padding:0 !important;
+    }
+    .ourProducts .text-center{
+        padding-top:20px;
+    }
+    .col{
+        padding:20px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        margin:30px;
+    }
+    .card-title{
+        font-size:25px !important;
+    }
+    .card img{
+        height:220px !important;
+        width:170px !important;
+    }
+    .card-description{
+        font-size:14px;
+    }
+
+    .ourProducts .card{
+        width:300px !important;
+        padding: 25px;
+    }
+
+}

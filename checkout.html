@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Ursinhos Carinhosos</title>
+    </head>
+    <body>
+    <header class="container-fluid p-2 text-center bg-info">
+        <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="assets/img/logo/logomarca.jpg"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end bg-info" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Quem somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosso time</a>
+                  </li>
+                  <li class="nav-item contact">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nossos produtos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Ursinhos carinhosos</a></li>
+                      <li><a class="dropdown-item" href="#">Ursinhos raros</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Coleção completa</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-cart3"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+            <main class="container">
+              <div class="py-5 text-center">
+                <h2>Formulário de pagamento</h2>
+              </div>
+          
+              <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                  <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">Seu carrinho</span>
+                    <span class="badge bg-primary rounded-pill">3</span>
+                  </h4>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Nome do produto</h6>
+                        <small class="text-body-secondary">Breve descrição</small>
+                      </div>
+                      <span class="text-body-secondary">R$200</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Segundo produto</h6>
+                        <small class="text-body-secondary">Breve descrição</small>
+                      </div>
+                      <span class="text-body-secondary">R$200</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Terceiro produto</h6>
+                        <small class="text-body-secondary">Breve descrição</small>
+                      </div>
+                      <span class="text-body-secondary">R$200</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                      <div class="text-success">
+                        <h6 class="my-0">Código promocional</h6>
+                        <small>CÓDIGODEEXEMPLO</small>
+                      </div>
+                      <span class="text-success">-R$20</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <span>Total (R$)</span>
+                      <strong>R$580</strong>
+                    </li>
+                  </ul>
+
+                  <form class="card p-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Código promocional">
+                      <button type="submit" class="btn btn-secondary">Resgatar</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                  <h4 class="mb-3">Endereço da cobrança</h4>
+                  <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Nome válido é obrigatório.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          O sobrenome válido é obrigatório.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="username" class="form-label">Nome de usuário</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required>
+                        <div class="invalid-feedback">
+                            Seu nome de usuário é obrigatório.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="text-body-secondary">(Opcional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com">
+                        <div class="invalid-feedback">
+                          Insira um endereço de e-mail válido para atualizações de envio.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="address" placeholder="12 Copacabana Rj" required>
+                        <div class="invalid-feedback">
+                          Favor inserir seu endereço de entrega.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address2" class="form-label">Endereço 2 <span class="text-body-secondary">(Optional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Casa ou Apartamento">
+                      </div>
+          
+                      <div class="col-md-5">
+                        <label for="country" class="form-label">País</label>
+                        <select class="form-select" id="country" required>
+                          <option value="">Escolher...</option>
+                          <option>Brasil</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Selecione um país válido.
+                        </div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="state" class="form-label">Estado</label>
+                        <select class="form-select" id="state" required>
+                          <option value="">Escolher...</option>
+                          <option>Rio de janeiro</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Forneça um estado válido.
+                        </div>
+                      </div>
+          
+                      <div class="col-md-3">
+                        <label for="zip" class="form-label">Cep</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Código postal necessário.
+                        </div>
+                      </div>
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="same-address">
+                      <label class="form-check-label" for="same-address">O endereço de entrega é o mesmo do meu endereço de cobrança</label>
+                    </div>
+          
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="save-info">
+                      <label class="form-check-label" for="save-info">Salve esta informação para a próxima vez</label>
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <h4 class="mb-3">Pagamento</h4>
+          
+                    <div class="my-3">
+                      <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                        <label class="form-check-label" for="credit">Cartão de crédito</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="debit">Cartão de débito</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="paypal">PayPal</label>
+                      </div>
+                    </div>
+          
+                    <div class="row gy-3">
+                      <div class="col-md-6">
+                        <label for="cc-name" class="form-label">Nome no cartão</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        <small class="text-body-secondary">Nome completo conforme exibido no cartão</small>
+                        <div class="invalid-feedback">
+                          Nome completo conforme exibido no cartão
+                        </div>
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="cc-number" class="form-label">Número do cartão de crédito</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                          O número do cartão de crédito é obrigatório
+                        </div>
+                      </div>
+          
+                      <div class="col-md-3">
+                        <label for="cc-expiration" class="form-label">Expiração</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Data de expiração necessária
+                        </div>
+                      </div>
+          
+                      <div class="col-md-3">
+                        <label for="cc-cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Código de segurança necessário
+                        </div>
+                      </div>
+                    
+          
+                    <hr class="my-4">
+          
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar para finalizar a compra</button>
+                  </form>
+                </div>
+              </div>
+            </main>
+            <br><br><br>
+          <footer class="container-fluid text-center">
+            <div class="companySocialMedia p-3">
+                <a href="#"><img src="assets/img/redes sociais/facebook.png"></a>
+                <a href="#"><img src="assets/img/redes sociais/instagram.png"></a>
+                <a href="#"><img src="assets/img/redes sociais/twitter.png"></a>
+            </div>
+            <div class="companyAdress">	Avenida Carioca, 63, Centro, Rio de Janeiro - RJ</div>
+            <div class="companyWhatsApp p-3">
+                <a href="#"><img src="assets/img/redes sociais/whatsapp.png"> (21) 99999-9999</a>
+            </div>
+        </footer>
+      </body>
+    
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Suas compras</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Produto adicionado ao carrinho!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar comprando</button>
+              <button type="button" class="btn btn-success">Finalizar compra</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </html>
